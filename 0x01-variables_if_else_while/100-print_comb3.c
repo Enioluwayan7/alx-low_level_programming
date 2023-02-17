@@ -17,8 +17,8 @@ int main(void)
 		{
 			if (!((ones == tens) || (tens > ones)))/*eliminates repitition*/
 			{
-				purchar(tens);
-				purchar(ones);
+				putchar(tens);
+				putchar(ones);
 				if (!(ones == '9' && tens == '8'))/*adds comma and space*/
 				{
 					putchar(',');
