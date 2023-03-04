@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
+void print_buffer(char *, int);
 /**
  * main - check the code for Holberton School students.
  *
@@ -8,7 +9,7 @@
  */
 int main(void)
 {
-	char buffer[] = "Talk is cheap. Show me the code.";
+	char buffer[] = "This is a string!\0And this is the rest of the #buffer :)\1\2\3\4\5\6\7#cisfun\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x20\x21\x34\x56#pointersarefun #infernumisfun\n";
 
 	printf("%s\n", buffer);
 	printf("---------------------------------\n");
