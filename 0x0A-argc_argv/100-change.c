@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -19,8 +20,10 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+
 	num = atoi(argv[1]);
 	result = 0;
+
 	if (num < 0)
 	{
 		printf("0\n");
