@@ -1,7 +1,8 @@
 #include <stdlib.h>
 /**
- * _strdup - Function returns a pointer to a new string which is a duplicate of the string 
- * @str: string  to dupliacte
+ * _strdup - Function returns a pointer to a new string which
+ * is a duplicate of the string 
+ * @str: string to dupliacte
  *
  * Return: pointer to the copied string (Success), NULL (Error)
  */
