@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "main.h"
 /**
  * argstostr - function that concatenates all the
  * arguments of your program
@@ -17,10 +18,11 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++)
+		for  (j = 0; av[i][j] != '\0'; j++)
 			len++;
 		len++;
 	}
+
 	str = malloc(sizeof(char) * (len + 1));
 
 	if (str == NULL)
@@ -38,6 +40,6 @@ char *argstostr(int ac, char **av)
 		str[k] = '\n';
 		k++;
 	}
-
 	return (str);
 }
+
