@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * add_nodeint -  function that adds a new node at the beginning of a listint_t list.
+ * add_nodeint -  function that adds a new node at
+ * the beginning of a listint_t list.
  * @head: pointer to the address of the head of the listint_t list.
  * @n: integer of new node to be contained
  *
