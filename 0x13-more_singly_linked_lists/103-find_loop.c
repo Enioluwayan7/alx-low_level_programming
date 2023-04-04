@@ -8,25 +8,25 @@
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *slow = head;
-	listint_t *fast = head;
+	listint_t *back = head;
+	listint_t *front = head;
 
 	if (!head)
 	return (NULL);
 
-	while (slow && fast && fast->next)
+	while (back && front && front->next)
 	{
-		fast = fast->next->next;
-		slow = slow->next;
-		if (fast == slow)
+		front = front->next->next;
+		back = back->next;
+		if (front == back)
 		{
-			slow = head;
-			while (slow != fast)
+			back = head;
+			while (back != front)
 			{
-			slow = slow->next;
-			fast = fast->next;
+			back = back->next;
+			front = front->next;
 			}
-			return (fast);
+			return (front);
 		}
 	}
 
